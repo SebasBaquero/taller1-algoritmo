@@ -1,3 +1,9 @@
+""""
+Entradas 
+inversion-->float-->a
+Salida 
+pago-->float-->pt
+"""
 a= float(input("Escriba su inversion "))
 vd=(a*0.02)
 pt=a+vd
