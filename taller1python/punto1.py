@@ -1,3 +1,11 @@
+"""
+Entradas
+edad1-->int-->a
+edad2-->int-->b
+edad3-->int-->c
+Salidas
+promedio-->float-->promedio
+"""
 print("Ingrese la edad numero1 ")
 a= int(input())
 print("Ingrese la edad numero2 ")
