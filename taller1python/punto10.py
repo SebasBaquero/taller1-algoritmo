@@ -6,8 +6,8 @@ cantidad pesetas--> float-->p
 Salidas
 pesetasr-->result= ca* chelin
 francosFrances-->result1a= result1/ franco
-dolares-->result2= p*dolar
-liras-->p*v100liras
+dolares-->result2= p/dolar
+liras-->p/v100liras
 """
 peseta=1
 v100chelines=956.871
@@ -27,8 +27,8 @@ result1= dg* dracma
 result1a= result1/ franco
 
 p=float(input("Digite una cantidad en pesetas: "))
-result2= p*dolar
-result2a= p*v100liras
+result2= p/dolar
+result2a= p/v100liras
 
 print("De chelines austriacos a pesetas es: ",result)
 print("De dracmas griegos a francos franceses es: ",result1a)
