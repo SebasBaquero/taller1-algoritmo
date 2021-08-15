@@ -1,14 +1,15 @@
 """
 Entradas
-Longitud del triangulo-->float-->a,b,c
-Salida
-sempiperimetro-->float-->d=(a+b+c)/2
-Area-->float-->area=math.sqrt(d*(d-a)*(d-b)*(d-c))
+Horas trabajo-->float-->horast
+Pago hora-->float-->pagoh
+Salidas
+Pago por horas-->float-->p=horast*pagoh
+Descuento por los impuestos-->float-->caja=p*0.20 y des=p-caja
 """
-import math
-print("Escriba las longitudes de los lados del triangulo: ")
-a, b, c = map(float, input().split())
-d=(a+b+c)/2
-area=math.sqrt(d*(d-a)*(d-b)*(d-c))
-print("El area del triangulo es: ", area)
+horast=float(input("Escriba las horas que ha trabajado: "))
+pagoh=float(input("Escriba el pago por hora: "))
+p=horast*pagoh
+caja=p*0.20 
+des=p-caja
+print("El pago sera de: ", des)
  
