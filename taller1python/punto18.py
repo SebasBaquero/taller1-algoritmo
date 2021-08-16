@@ -6,7 +6,7 @@ tiempo-->float-->t
 salida
 intereses-->str-->inte
 """
-a=float(input ("Escreiba el valor del pestramo: " ))
+a=float(input ("Escriba el valor del pestramo: " ))
 b=float(input ("Escriba el valor de los intereses: "))
 t=4
 inte=(a*t*b)/100
