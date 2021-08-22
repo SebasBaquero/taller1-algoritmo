@@ -1,3 +1,10 @@
+"""
+entrada
+inversion-->float-->capital
+tasa-->float-->tasa
+salida
+dineroFinal-->interes
+"""
 capital= float(input("Ingrese el capital a invertir: "))
 tasa= float(input("Ingrese la tasa de interes: "))
 interes= tasa*capital/100
