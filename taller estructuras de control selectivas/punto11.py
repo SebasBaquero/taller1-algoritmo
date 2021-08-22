@@ -1,12 +1,19 @@
-
-t= float(input("Ingrese la temperatura: "))
-if (t>85):
-  print("Debes de practicar natacion")
-elif(t>70 and t<=85):
-  print("Debas de practicar Tenis")
-elif(t>32 and t<=70):
-  print("Debas de practicar Golf")
-elif(t>10 and t<=32):
-  print("Debas de practicar Esqui")
+"""
+Entradas
+temperatura---float-->t
+Salida
+tipo_de_natacion-->str--tipo
+"""
+t=float(input("Digite temperatura: "))
+if(t>85):
+  print("natación")
+elif(t>71 and t<=85):
+  print("tenis")
+elif(t>33 and t<=70):
+  print("Golf")
+elif(t>11 and t<=32):
+  print("Esquí")
 elif(t<=10):
-  print("Debes practicar Marcha")
+  print("Marcha")
+else:
+  print("No se identifico deporte") 
