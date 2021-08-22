@@ -1,3 +1,4 @@
+
 t= float(input("Ingrese la temperatura: "))
 if (t>85):
   print("Debes de practicar natacion")
