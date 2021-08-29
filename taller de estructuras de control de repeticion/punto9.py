@@ -1,29 +1,29 @@
 """
 Entradas
-valores de los productos-->valor
+valores de los productos-->datos
 Salidas
-Alcool-->a
-Gasolina-->g
-Diesel-->d
+Alcool-->alcool
+Gasolina-->gas
+Diesel-->diesel
 """
-valor = 0
-a = 0
-g = 0
-d = 0
+alcool = 0
+gas = 0
+diesel = 0
 
-while valor != 4:
-    valor = int(input())
+while True:
+    datos= int(input())
+    if(datos==4):
+      break
+    elif (datos == 1):
+        alcool = alcool+ 1
     
-    if(valor == 1):
-        a += 1
+    elif (datos == 2):
+        gas = gas+ 1
     
-    if(valor == 2):
-        g += 1
+    elif (datos == 3):
+        diesel = diesel+ 1
     
-    if(valor == 3):
-        d += 1
-
 print("MUITO OBRIGADO")
-print("Alcool: %d" %a)
-print("Gasolina: %d" %g)
-print("Diesel: %d" %d)
+print("Alcool:", alcool)
+print("Gasolina:",gas)
+print("Diesel:", diesel)
