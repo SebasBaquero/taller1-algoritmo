@@ -12,7 +12,6 @@ for i in archivo:
 for i in paises:
   if(i[0]=="U"):
     print(i)
-print("Capital con inicial con la Letra U: ")
 print()
 archivo = open("paises.txt", "r")
 lista1=[]
