@@ -188,6 +188,14 @@ if __name__ == "__main__":
 
 
 #Realizar una funcion que retorne la posicion de un elemento que pasa por parametro
+"""
+Entradas:
+lista-->list-->lista
+lista-->str-->elemento
+
+Salidas:
+lista-->list-->lista
+"""
 def posicion_elemento(lista:list,elemento:str):
   aux= []
   for i in lista:
@@ -199,6 +207,14 @@ if __name__ == "__main__":
   print(posicion_elemento(lista_frutas,"Fresa"))
 
 #Realizar una funcion que agregue al final de archivo frutas una fruta
+"""
+Entradas:
+lista-list-->lista
+lista-str-->elemento
+
+Salidas:
+lista-list-->lista
+"""
 def frutas_nuevo(elemento):
   frutas= open('frutas.txt', 'r')
   for i in frutas:
@@ -218,6 +234,13 @@ if __name__ == "__main__":
 
 
 #Realizar una funcion que cuente el numero de veces que se repite un elemento 
+""" 
+Entradas:
+lista-list-->lista
+
+Salidas:
+lista-list-->lista
+"""
 def repetir(elemento):
   aux= []
   for i in elemento:
