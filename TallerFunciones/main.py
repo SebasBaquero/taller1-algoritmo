@@ -98,8 +98,8 @@ def elimina_elemento_lista(lista:list,elemento:str)-> list:
 
 if __name__ == "__main__":
   lista_frutas_nueva=elimina_elemento_lista(lista_frutas,"\n")
-  lista_frutas_sin_Kiwi=elimina_elemento_lista(lista_frutas_nueva,"Kiwi")
-  print(lista_frutas_sin_Kiwi)
+  lista_frutas_sin_Uva=elimina_elemento_lista(lista_frutas_nueva,"Uva")
+  print(lista_frutas_sin_Uva)
 
 
 #Retorna una lista con las palabras iniciales con la letra que pasa por parametro  
@@ -107,19 +107,20 @@ if __name__ == "__main__":
 Entradas
 letra-->str-->letra
 lista-->list-->lista
-Salidas
-lista--<list-->lista
+
+Salidas:
+lista-->list-->lista
 """
-def letra(letra:str, lista:list)->list:
-  auxiliar=[]
+def letra(letra:str,lista:list)-> list:
+  aux= []
   for i in lista:
     if (i[0]==letra):
-      auxiliar.append(i)
-  return auxiliar
+      aux.append(i)
+  return aux
 
 if __name__ == "__main__":
-  letra_inicial_C=letra("C",lista_frutas)
-  print(letra_inicial_C)
+  lista_inicial=letra("U",lista_frutas)
+  print(lista_inicial))
 
 
 #Realizar una funcion que retorne el tamaño de una lista
@@ -127,19 +128,19 @@ if __name__ == "__main__":
 Entradas:
 lista-->list-->lista
 elemento-->str-->elemento
-Salidas
+
+Salidas:
 lista-->list-->lista
 """   
 def tamano_lista(lista:list):
-  tamaño=len(lista)
-  auxiliar=[]
+  tm= len(lista)
+  aux= []
   for i in lista:
-    auxiliar.count(i==0)
-  return tamaño
+    aux.count(i==0)
+  return tm
 
 if __name__ == "__main__":
   print(tamano_lista(lista_numeros))
-
 
 
 #Retorna el tamaño de la lista y que tipo de datos estan dentro de la lista
@@ -147,16 +148,17 @@ if __name__ == "__main__":
 Entradas:
 lista-->list-->lista
 numero-->int-->numero
-Salidas
+
+Salidas:
 lista-->list-->lista
 """ 
 def informacion_lista(lista:list):
-  tamaño=len(lista)
-  auxiliar=[]
+  tm= len(lista)
+  aux= []
   for i in lista:
-    if(auxiliar.count(i)==0):
-      auxiliar.append(type(i))
-  return tamaño,auxiliar
+    if(aux.count(i)==0):
+      aux.append(type(i))
+  return tm,aux
 
 if __name__ == "__main__": 
   print(informacion_lista(lista_frutas))
@@ -164,20 +166,21 @@ if __name__ == "__main__":
 
 #Retorne una lista con los numeros negativos
 """
-Entradas
+Entradas:
 lista-->list-->lista
-Salidas
+
+Salidas:
 lista-->list-->lista
 """
 def numeros_negativos(lista:list):
-  auxilar=[]
-  auxilar_dos=[]
+  aux= []
+  aux2= []
   for i in lista:
-    auxilar.append(float(i))
-  for i in auxilar:
+    aux.append(float(i))
+  for i in aux:
     if(i<0):
-      auxilar_dos.append(int(i))
-  return auxilar_dos
+      aux2.append(int(i))
+  return aux2
 
 if __name__ == "__main__": 
   lista_sin_espacio=eliminar_un_caracter_de_toda_la_lista(copia,"\n")
@@ -185,24 +188,24 @@ if __name__ == "__main__":
 
 
 #Realizar una funcion que retorne la posicion de un elemento que pasa por parametro
-def posicion_elemento(lista:list, elemento:str):
-  auxiliar=[]
+def posicion_elemento(lista:list,elemento:str):
+  aux= []
   for i in lista:
     if (str(i)==str(elemento)+"\n"):
-      auxiliar.append(lista.index(i))
-  return auxiliar
+      aux.append(lista.index(i))
+  return aux
   
 if __name__ == "__main__": 
   print(posicion_elemento(lista_frutas,"Fresa"))
 
 #Realizar una funcion que agregue al final de archivo frutas una fruta
 def frutas_nuevo(elemento):
-  frutas=open('frutas.txt', 'r')
+  frutas= open('frutas.txt', 'r')
   for i in frutas:
     lista_frutas.append(i)
   frutas.close()
 
-  frutas=open('frutas.txt', 'w')
+  frutas= open('frutas.txt', 'w')
 
   for i in lista_frutas:
     frutas.write(i)
@@ -211,15 +214,15 @@ def frutas_nuevo(elemento):
   frutas.close()
 
 if __name__ == "__main__": 
-  print(frutas_nuevo,"Maracuya")
+  print(frutas_nuevo,"Granadilla")
 
 
 #Realizar una funcion que cuente el numero de veces que se repite un elemento 
 def repetir(elemento):
-  auxiliar=[]
+  aux= []
   for i in elemento:
-    auxiliar.count(i=="123")
-  return auxiliar
+    aux.count(i=="123")
+  return aux
 
 if __name__ == "__main__":
   print(repetir(lista_numeros))
