@@ -132,7 +132,7 @@ t.speed(0)
 
 
 
-colors=['red', 'purple', 'blue', 'green', 'yellow', 'orange', 'pink','light blue',]
+colors=['red', 'purple', 'turquoise', 'green', 'yellow', 'orange', 'pink','light blue',]
 
 t.pensize(9)
 
